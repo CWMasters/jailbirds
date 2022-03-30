@@ -10,10 +10,17 @@ VALUES
 ("Pancreas"),
 ("Intestines");
 
+INSERT INTO biofluids (name)
+VALUES
+("Blood"),
+("Cerebral Spinal Fluid"),
+("Plasma"),
+("Platelet");
+
 INSERT INTO purpose (goal, organs_id),
 VALUES
 ("Research", 1),
-("Non_Directed Donation", 1),
+("Non-Directed Donation", 1),
 ("Pediatric Donation", 2),
 ("Paired Donations", 2)
 ("Directed Donation", 3),

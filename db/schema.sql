@@ -1,6 +1,7 @@
 USE spare-parts;
 
 DROP TABLE IF EXISTS organs;
+DROP TABLE IF EXISTS biofluids;
 DROP TABLE IF EXISTS donors;
 DROP TABLE IF EXISTS purpose;
 
@@ -11,12 +12,20 @@ CREATE TABLE organs (
 
 );
 
+CREATE TABLE biofluids (
+      id INTEGER AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(30) NOT NULL
+
+);
+
 
 CREATE TABLE purpose (
      id INTEGER AUTO_INCREMENT PRIMARY KEY,
      goal VARCHAR(30) NOT NULL,
      organs_id INTEGER,
+     biolfuids_id INTEGER,
      CONSTRAINT fk_organs FOREIGN KEY (organ_id) REFERENCES organs(id) ON DELETE SET NULL
+     CONSTRAINT fk_biofluids FOREIGN KEY (biofluid_id) REFERENCES biofluids(id) ON DELETE SET NULL
 
 );
 
