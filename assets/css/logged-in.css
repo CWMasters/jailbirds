@@ -4,21 +4,27 @@
    background-color: black;
 }
 
-/* html {
-    background: url(../images/anatomy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%; */
-    /* filter: blur(3px); */
-/* } */
+/* page description */
+.page-description {
+    padding: 50px 20px 50px 20px;
+}
 
-/* .brain {
-    height: 100px;
-} */
-
+/* sub headers */
 .h-organs, .h-bio{
     font-size: 60px;
     text-align: center;
     font-weight: normal;
 }
 
+/* tiles */
+.tile {
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+
+#b-fluids {
+    padding-bottom: 100%;
+}
