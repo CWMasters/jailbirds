@@ -1,0 +1,45 @@
+body main header h1 {
+    text-align: center;
+    font-size: 30px;
+}
+title {
+    font-family: 'monospace';
+    font-size: 30px;
+}
+body p {
+    font-family: 'monospace';
+    font-size: 60px;
+}
+body {
+    background-color: #000000;
+    font-family: 'monospace';
+    color: white;
+    font-size: 50px;
+}
+/* affects all font  */
+* {
+    font-family: monospace;
+    color: skyblue;
+}
+
+/* background image  */
+html {
+    background: url(../images/anatomy.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* main header */
+.m-title {
+    font-size: 30px;
+    margin-left: 170px;
+    margin-top: 40px;
+     
+}
+
+
+p button {
+      color: red;
+}
