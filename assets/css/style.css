@@ -16,7 +16,7 @@ html {
 /* main header */
 .m-title {
     font-size: 85px;
-    margin-left: 170px;
+    margin-left: 130px;
     margin-top: 40px;
     /* animation: flicker 1.5s infinite alternate; */
 }
@@ -62,12 +62,12 @@ html {
 .login, .logout {
     font-size: 30px;
     margin-top: 30px;
-    margin-left: 170px;
+    margin-left: 130px;
 }
 
 /* user input enter btn */
 .enter-btn {
-    margin-left: 170px;
+    margin-left: 130px;
     margin-top: 10px;
     color: blue;
     font-size: 15px;
@@ -76,14 +76,14 @@ html {
 
 /* credentials (user input) */
 .credentials {
-    margin-left: 170px;
+    margin-left: 130px;
 }
 
 /* text boxes for login/logout */
 .user-text {
     height: 30px;
     font-size: 20px;
-    margin-left: 170px;
+    margin-left: 130px;
     color: rgb(42, 151, 247);
 }
 
