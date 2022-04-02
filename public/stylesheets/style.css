@@ -6,7 +6,7 @@
 
 /* background image  */
 html {
-    background: url(./images/anatomy.png);
+    background: url(../content/images/anatomy.png);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
