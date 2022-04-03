@@ -1,3 +1,4 @@
+const { Model, DataTypes } = require('sequelize');
 const sequalize = require('../config/connection');
 
 // create the model/schema
