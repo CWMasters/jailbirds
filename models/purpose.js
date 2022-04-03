@@ -5,25 +5,34 @@ const sequalize = require('../config/connection');
  class purpose extends Model {}
  
      
-  purpose.init(
-     {
-         id: {
-             type: DataTypes.INTEGER,
-             allowNull: false,
-             primaryKey: true,
-             autoIncrement: true
-         },
-         donor_number: {
-             type: DataTypes.STRING,
-             allowNull: false
-         },
-         purpose_id: {
-             type: DataTypes.INTEGER,
-             allowNull: false
-         },
-     }       
-            
- );  
+ organs.init(
+    {
+
+       id: {
+       type: DataTypes.INTEGER,
+       allowNull: false,
+       primaryKey: true,
+       autoIncrement: true
+       },
+
+
+       purpose_name: {
+       type: DataTypes.STRING,
+       allowNull: false,
+       }
+   },
+   {
+       sequelize,
+       timestamps: false,
+       freezeTableName: true,
+       underscored: true,
+       modelName: 'purpose',
+ }
+
+  
+
+           
+);    
 
 module.exports = purpose;
 

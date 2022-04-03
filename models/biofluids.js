@@ -6,30 +6,29 @@ class biofluids extends Model {}
       
    biofluids.init(
       {
-          fluid: {
-              type: DataTypes.INTEGER,
-              allowNull: false,
-              primaryKey: true,
-              autoIncrement: true
-          },
-          donor_id: {
-              type: DataTypes.STRING,
-              allowNull: false,
-              references: {
-                 model: 'users',
-                 key: 'donor_number'
-            }
-          },
-          purpose_id: {
-              type: DataTypes.INTEGER,
-              allowNull: false,
-              references: {
-                 model: 'users',
-                 key: 'donor_number'
-            }
-          },
- 
-     }     
+
+         id: {
+         type: DataTypes.INTEGER,
+         allowNull: false,
+         primaryKey: true,
+         autoIncrement: true
+         },
+
+
+         biofluid_name: {
+         type: DataTypes.STRING,
+         allowNull: false,
+         }
+     },
+     {
+         sequelize,
+         timestamps: false,
+         freezeTableName: true,
+         underscored: true,
+         modelName: 'biofluids',
+   }
+
+    
   
              
 );  

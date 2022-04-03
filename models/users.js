@@ -12,21 +12,26 @@ const sequalize = require('../config/connection');
      
   Users.init(
      {
-         id: {
+
+         Donor_id: {
              type: DataTypes.INTEGER,
              allowNull: false,
              primaryKey: true,
              autoIncrement: true
          },
-         donor_number: {
+         organ_name: {
              type: DataTypes.STRING,
              allowNull: false
          },
-         purpose_id: {
-             type: DataTypes.INTEGER,
-             allowNull: false
-         },
 
+         biofluids_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        purpose_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
          username: {
             type: DataTypes.STRING,
             allowNull: false                 
