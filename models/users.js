@@ -73,5 +73,5 @@ const sequalize = require('../config/connection');
             
  );  
 
-module.exports = users;
+module.exports = Users;
 
