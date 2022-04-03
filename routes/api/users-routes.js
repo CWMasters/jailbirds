@@ -1,11 +1,12 @@
-const Donors = require('../../models');
+const users = require('../../models');
 
 const router = require('express').Router();
 const { organs, biofluids, purpose } = require ('../../models'); 
+const Users = require('../../models/users');
 
 //Get all Donors
 router.get('/', (req, res) => {
-     Donors.findAll(
+     users.findAll(
 
      {
         include : [
@@ -24,7 +25,7 @@ router.get('/', (req, res) => {
 
 
     })
-         .then(dbDonorsData => res.json(dbDonorsData))
+         .then(usersData => res.json(usersData))
          .catch(err => {
              console.log(err);
              res.status(500).json(err);
@@ -53,12 +54,12 @@ router.get('/:Donor_id', (req, res) => {
       }]
     })
 
-         .then(dbDonorsData => {
-         if (!dbDonorsData) {
+         .then(usersData => {
+         if (!usersData) {
          res.status(404).json({ message: 'No user found with this id' });
          return;
          }
-         res.json(dbDonorsData);
+         res.json(usersData);
          })
          .catch(err => {
          console.log(err);
@@ -68,12 +69,12 @@ router.get('/:Donor_id', (req, res) => {
          
         // Create new user
         router.post('/', (req, res) => {
-            User.create({
+            Users.create({
               username: req.body.username,
               email: req.body.email,
               password: req.body.password
             })
-              .then(dbUserData => res.json(dbUserData))
+              .then(usersData => res.json(usersData))
               .catch(err => {
                 console.log(err);
                 res.status(500).json(err);
@@ -82,39 +83,39 @@ router.get('/:Donor_id', (req, res) => {
           
         // login
           router.post('/login', (req, res) => {
-            User.findOne({
+            Users.findOne({
               where: {
                 email: req.body.email
               }
-            }).then(dbUserData => {
-              if (!dbUserData) {
+            }).then(usersData => {
+              if (!usersData) {
                 res.status(400).json({ message: 'No user with that email address!' });
                 return;
               }
           
-              const validPassword = dbUserData.checkPassword(req.body.password);
+              const validPassword = usersData.checkPassword(req.body.password);
           
               if (!validPassword) {
                 res.status(400).json({ message: 'Incorrect password!' });
                 return;
               }
           
-              res.json({ user: dbUserData, message: 'You are now logged in!' });
+              res.json({ user: usersData, message: 'You are now logged in!' });
             });
           });
         
           router.delete('/:Donor_id', (req, res) => {
-            User.destroy({
+            users.destroy({
               where: {
                 id: req.params.id
               }
             })
-              .then(dbUserData => {
-                if (!dbUserData) {
+              .then(usersData => {
+                if (!usersData) {
                   res.status(404).json({ message: 'No user found with this id' });
                   return;
                 }
-                res.json(dbUserData);
+                res.json(usersData);
               })
               .catch(err => {
                 console.log(err);
