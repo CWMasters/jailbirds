@@ -54,10 +54,54 @@ router.get('/:id', (req, res) => {
       res.status(500).json(err)
     });
    });  
+
+   router.post('/', (req, res) => {
+    biofluids.create(req.body)
+    .then(biofluidsData => res.status(200).json(biofluidsData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+    });
+    
+    router.put('/:id', (req, res) => {
+        biofluids.update(req.body, {
+        where: {
+          id: req.params.id
+        }
+      }) .then(biofluidsData => {
+        if(!biofluidsData) {
+          res.status(404).json({ message: 'category does not exist'});
+          return;
+        }
+        res.json(biofluidsData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+    });
+    
    
 
    router.delete('/:id', (req, res) => {
-   
+    biofluids.destroy ({
+        where: {
+          id: req.params.id
+        }
+      })
+      .then(biofluidsData => {
+        if(!biofluidsData) {
+          res.status(404).json({ message: 'category does not exist'});
+          return;
+        }
+        res.json(biofluidsData);
+      })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+      
+    });
   });
 
    module.exports = router;
