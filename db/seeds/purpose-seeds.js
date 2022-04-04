@@ -1,4 +1,4 @@
-const { Purpose } = require('../models');
+const { Purpose } = require('../../models');
 
 const purposeData = [
 
