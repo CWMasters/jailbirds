@@ -1,5 +1,5 @@
 const {module, DataTypes } = require('sequalize');
-const sequalize = require('../config/connection');
+const sequelize = require('../config/connection');
 
 // create the model/schema
  class purpose extends Model {}
