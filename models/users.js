@@ -1,16 +1,16 @@
-const { model, DataTypes } = require('sequalize');
+const { Model, DataTypes } = require('sequelize');
 //const bcrypt = require('bcrypt);
 const sequelize = require('../config/connection');
 
 // create the model/schema
- class Users extends Model {
+ class users extends Model {
    //check password
    checkPassword(loginPW) {
        return bcrypt.compareSync(loginPW, this.password);
    }
  }
      
-  Users.init(
+  users.init(
      {
 
          Donor_id: {
@@ -73,5 +73,5 @@ const sequelize = require('../config/connection');
             
  );  
 
-module.exports = Users;
+module.exports = users;
 

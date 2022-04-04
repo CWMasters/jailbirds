@@ -1,4 +1,4 @@
-const { Purpose } = require('../models');
+const { purpose } = require('../models');
 
 const purposeData = [
 
@@ -33,6 +33,6 @@ const purposeData = [
   },
 ];
 
-const seedPurpose = () => Purpose.bulkCreate(purposeData);
-modeule.exports = seedPurpose;
+const seedPurpose = () => purpose.bulkCreate(purposeData);
+module.exports = seedPurpose;
 

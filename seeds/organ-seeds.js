@@ -41,4 +41,4 @@ const organsData = [
 ];
 
 const seedOrgans = () => organs.bulkCreate(organsData);
-modeule.exports = seedOrgans;
+module.exports = seedOrgans;

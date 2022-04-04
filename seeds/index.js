@@ -3,7 +3,7 @@ const seedPurpose = require('./purpose-seeds');
 const seedOrgans = require('./organ-seeds');
 const seedBiofluids = require('./biofluids-seeds');
 
-const sequalize = require('../config/connection');
+const sequelize = require('../config/connection');
 
 const seedAll = async () => {
     await sequelize.sync({ force: true });

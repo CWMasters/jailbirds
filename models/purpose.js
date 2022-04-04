@@ -1,11 +1,13 @@
-const {module, DataTypes } = require('sequalize');
+
+const {Model, DataTypes } = require('sequelize');
+
 const sequelize = require('../config/connection');
 
 // create the model/schema
  class purpose extends Model {}
  
      
- organs.init(
+ purpose.init(
     {
 
        id: {
