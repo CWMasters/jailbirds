@@ -3,7 +3,7 @@ const { users } = require('../models');
 const usersData = [
 
      {
-         Donor_id: '2343',
+         id: '2343',
          organs_name: 'brain',
          biofluids_name: 'CSF',
          purpose_name: 'Research',
@@ -13,7 +13,7 @@ const usersData = [
      },
 
      {
-        Donor_id: '9456',
+        id: '9456',
         organs_name: 'Heart',
         biofluids_name: 'blood',
         purpose_name: 'Tissue Donation',
@@ -23,7 +23,7 @@ const usersData = [
     },
 
     {
-        Donor_id: '3278',
+        id: '3278',
         organs_name: 'kidney',
         biofluids_name: 'None',
         purpose_name: 'Directed Donation',
@@ -33,7 +33,7 @@ const usersData = [
     },
 
     {
-        Donor_id: '5486',
+        id: '5486',
         organs_name: 'liver',
         biofluids_name: 'blood',
         purpose_name: 'Non Directed Donation',
@@ -43,7 +43,7 @@ const usersData = [
     },
 
     {
-        Donor_id: '2156',
+        id: '2156',
         organs_name: 'lungs',
         biofluids_name: 'plasma',
         purpose_name: 'Paired Donation',
@@ -53,7 +53,7 @@ const usersData = [
     },
 
     {
-        Donor_id: '0932',
+        id: '0932',
         organs_name: 'Intestines',
         biofluids_name: 'None',
         purpose_name: 'Pediatric Donation',
