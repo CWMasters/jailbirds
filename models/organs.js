@@ -18,8 +18,17 @@ organs.init(
        organs_name: {
        type: DataTypes.STRING,
        allowNull: false,
-       }
-   },
+       },
+       
+       users_id: {
+        type: DataTypes.INTEGER,
+        references: {
+           models: 'users',
+           key: 'Donor_id'
+        }
+
+       } 
+    },
    {
        sequelize,
        timestamps: false,

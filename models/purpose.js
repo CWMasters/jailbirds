@@ -1,4 +1,4 @@
-const {Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create the model/schema
@@ -19,8 +19,27 @@ const sequelize = require('../config/connection');
        purpose_name: {
        type: DataTypes.STRING,
        allowNull: false,
+       },
+
+   organs_purpose: {
+       type: DataTypes.INTEGER,
+       allowNull: false,
+       references: {
+           model: 'organs',
+           key: 'id'
        }
    },
+
+   biofluids_purpose: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    references: {
+        model: 'biofluids',
+        key: 'id'
+    }
+}
+},
+
    {
        sequelize,
        timestamps: false,
