@@ -32,7 +32,7 @@ biofluids.hasOne(purpose, {
   foreignKey: 'biofluids_purpose',
 });
 
-purpose.hasOne(biofluids, {
+purpose.belongsTo(biofluids, {
   foreignKey: 'biofluids_purpose',
 });
 

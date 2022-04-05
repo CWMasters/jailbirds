@@ -13,13 +13,13 @@ const sequelize = require('../config/connection');
   users.init(
      {
 
-         Donor_id: {
+         id: {
              type: DataTypes.INTEGER,
              allowNull: false,
              primaryKey: true,
              autoIncrement: true
          },
-         organ_name: {
+         organs_name: {
              type: DataTypes.STRING,
              allowNull: false
          },

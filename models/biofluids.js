@@ -15,7 +15,7 @@ class biofluids extends Model {}
          },
 
 
-         biofluid_name: {
+         biofluids_name: {
          type: DataTypes.STRING,
          allowNull: false,
          },
@@ -24,7 +24,7 @@ class biofluids extends Model {}
           type: DataTypes.INTEGER,
           references: {
              models: 'users',
-             key: 'Donor_id'
+             key: 'id'
           }
 
          } 

@@ -24,7 +24,7 @@ organs.init(
         type: DataTypes.INTEGER,
         references: {
            models: 'users',
-           key: 'Donor_id'
+           key: 'id'
         }
 
        } 

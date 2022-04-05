@@ -21,18 +21,16 @@ const sequelize = require('../config/connection');
        allowNull: false,
        },
 
-   organs_purpose: {
+   organs_id: {
        type: DataTypes.INTEGER,
-       allowNull: false,
        references: {
            model: 'organs',
            key: 'id'
        }
    },
 
-   biofluids_purpose: {
+   biofluids_id: {
     type: DataTypes.INTEGER,
-    allowNull: false,
     references: {
         model: 'biofluids',
         key: 'id'

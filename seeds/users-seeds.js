@@ -1,10 +1,10 @@
 const { users } = require('../models');
 
-const UsersData = [
+const usersData = [
 
      {
          Donor_id: '2343',
-         organ_name: 'brain',
+         organs_name: 'brain',
          biofluids_name: 'CSF',
          purpose_name: 'Research',
          username: '2343Donor',
@@ -14,7 +14,7 @@ const UsersData = [
 
      {
         Donor_id: '9456',
-        organ_name: 'Heart',
+        organs_name: 'Heart',
         biofluids_name: 'blood',
         purpose_name: 'Tissue Donation',
         username: '9456Donor',
@@ -24,7 +24,7 @@ const UsersData = [
 
     {
         Donor_id: '3278',
-        organ_name: 'kidney',
+        organs_name: 'kidney',
         biofluids_name: 'None',
         purpose_name: 'Directed Donation',
         username: '3278Donor',
@@ -34,7 +34,7 @@ const UsersData = [
 
     {
         Donor_id: '5486',
-        organ_name: 'liver',
+        organs_name: 'liver',
         biofluids_name: 'blood',
         purpose_name: 'Non Directed Donation',
         username: '5486Donor',
@@ -44,7 +44,7 @@ const UsersData = [
 
     {
         Donor_id: '2156',
-        organ_name: 'lungs',
+        organs_name: 'lungs',
         biofluids_name: 'plasma',
         purpose_name: 'Paired Donation',
         username: '2156Donor',
@@ -54,7 +54,7 @@ const UsersData = [
 
     {
         Donor_id: '0932',
-        organ_name: 'Intestines',
+        organs_name: 'Intestines',
         biofluids_name: 'None',
         purpose_name: 'Pediatric Donation',
         username: '0932Donor',
@@ -69,5 +69,5 @@ const UsersData = [
 
 
 
-const seedUsers = () => users.bulkCreate(UsersData);
+const seedUsers = () => users.bulkCreate(usersData);
 module.exports = seedUsers;
