@@ -1,12 +1,10 @@
 const router = require('express').Router();
-const biofluidsRoutes = require('./biofluids-routes');
-const organsRoutes = require('./organ-routes');
-const purposeRoutes = require('./purpose-Routes');
+const purposeRoutes = require('./purpose-routes');
 const usersRoutes = require('./users-routes');
+const donationsRoutes = require('./donations-routes');
 
-router.use('/biofluids', biofluidsRoutes);
-router.use('/organs', organsRoutes);
 router.use('/purpose', purposeRoutes);
 router.use('/users', usersRoutes);
+router.use('/donations', donationsRoutes);
 
 module.exports = router;
