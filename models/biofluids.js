@@ -15,11 +15,20 @@ class biofluids extends Model {}
          },
 
 
-         biofluid_name: {
+         biofluids_name: {
          type: DataTypes.STRING,
          allowNull: false,
-         }
-     },
+         },
+
+         users_id: {
+          type: DataTypes.INTEGER,
+          references: {
+             models: 'users',
+             key: 'Donor_id'
+          }
+
+         } 
+      },
      {
          sequelize,
          timestamps: false,
@@ -34,4 +43,5 @@ class biofluids extends Model {}
 );  
  
  module.exports = biofluids;
+ 
  

@@ -9,7 +9,7 @@ purpose.findAll (
     include : [
         {
             model: users,
-            attributes : [ 'Donor_id']
+            attributes : [ 'id']
         },
       {
       model: organs,
@@ -37,7 +37,7 @@ router.get('/:id', (req, res) => {
       include : [
         {
             model: users,
-            attributes : [ 'Donor_id']
+            attributes : [ 'id']
         },
       {
       model: organs,
@@ -89,7 +89,7 @@ router.get('/:id', (req, res) => {
         }
       })
       .then(purposeData => {
-        if(!purposesData) {
+        if(!purposeData) {
           res.status(404).json({ message: 'purposedoes not exist'});
           return;
         }

@@ -7,6 +7,6 @@ const usersRoutes = require('./users-routes');
 router.use('/biofluids', biofluidsRoutes);
 router.use('/organs', organsRoutes);
 router.use('/purpose', purposeRoutes);
-router.use('/user', usersRoutes);
+router.use('/users', usersRoutes);
 
-module.export = router;
+module.exports = router;

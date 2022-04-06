@@ -1,7 +1,9 @@
 const router = require('express').Router();
-const apiControllers = require('./api');
+const apiRoutes = require('./api/');
+const htmlRoutes = require('./routes/html-routes');
 
-router.use('/api', apiControllers);
+router.use('/api', apiRoutes);
+router.use('/', htmlRoutes);
 
 router.use((req, res) => {
   res.send("<h1>Wrong Route!</h1>")
