@@ -4,41 +4,42 @@ const purposeData = [
 
   {
     id: '1',
-    purpose_name: 'Research',
+    reason: 'Research',
   
   },
 
   { 
     id: '2',
-    purpose_name: 'Non-Directed Donation',
+    reason: 'Non-Directed Donation',
    
   },
 
   {
     id: '3',
-    purpose_name: 'Pediatric Donation',
+    reason: 'Pediatric Donation',
   
   },
 
   {
     id: '4',
-    purpose_name: 'Paired Donation',
+    reason: 'Paired Donation',
    
   },
 
   {
     id: '5',
-    purpose_name: 'Directed Donation',
+    reason: 'Directed Donation',
   
   },
 
   {
     id: '6',
-    purpose_name: 'Tissue Donation',
+    reason: 'Tissue Donation',
  
   },
 ];
 
 const seedPurpose = () => purpose.bulkCreate(purposeData);
 module.exports = seedPurpose;
+
 
