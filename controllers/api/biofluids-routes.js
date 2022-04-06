@@ -9,7 +9,7 @@ biofluids.findAll (
     include : [
         {
             model: users,
-            attributes : [ 'Donor_id']
+            attributes : [ 'id']
         },
       {
       model: biofluids,
@@ -37,7 +37,7 @@ router.get('/:id', (req, res) => {
       include : [
         {
             model: users,
-            attributes : [ 'Donor_id']
+            attributes : [ 'id']
         },
       {
       model: biofluids,

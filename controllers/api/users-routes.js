@@ -1,8 +1,6 @@
-const users = require('../../models');
-
 const router = require('express').Router();
-const { organs, biofluids, purpose } = require ('../../models'); 
-const Users = require('../../models/users');
+const { users, organs, biofluids, purpose } = require ('../../models'); 
+
 
 //Get all Donors
 router.get('/', (req, res) => {
@@ -33,8 +31,8 @@ router.get('/', (req, res) => {
 });
 
 //Get one Donor
-router.get('/:Donor_id', (req, res) => {
-     donors.findOne(
+router.get('/:id', (req, res) => {
+     users.findOne(
         {
             where : {
                 id: req.params.id
@@ -69,7 +67,7 @@ router.get('/:Donor_id', (req, res) => {
          
         // Create new user
         router.post('/', (req, res) => {
-            Users.create({
+            users.create({
               username: req.body.username,
               email: req.body.email,
               password: req.body.password
@@ -83,7 +81,7 @@ router.get('/:Donor_id', (req, res) => {
           
         // login
           router.post('/login', (req, res) => {
-            Users.findOne({
+            users.findOne({
               where: {
                 email: req.body.email
               }
@@ -104,7 +102,7 @@ router.get('/:Donor_id', (req, res) => {
             });
           });
         
-          router.delete('/:Donor_id', (req, res) => {
+          router.delete('/:id', (req, res) => {
             users.destroy({
               where: {
                 id: req.params.id
@@ -124,5 +122,7 @@ router.get('/:Donor_id', (req, res) => {
           });
           
           module.exports = router;
+  
+     
   
      
