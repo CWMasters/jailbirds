@@ -29,4 +29,4 @@ const biofluidsData = [
 ];
 
 const seedBiofluids = () => biofluids.bulkCreate(biofluidsData);
-modeule.exports = seedBiofluids;
+module.exports = seedBiofluids;
