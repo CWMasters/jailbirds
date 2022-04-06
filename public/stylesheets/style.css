@@ -17,11 +17,12 @@ body {
 
 /* background image  */
 html {
-    background: url(../images/anatomy.png);
-    /* background-position: center; */
+    background: url(../content/images/anatomy.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-attachment: fixed;
+    /* height: 100%; */
 }
 
 /* main header */
@@ -97,5 +98,44 @@ html {
     margin-left: 170px;
     color: rgb(42, 151, 247);
 }
+
+
+
+
+
+
+.sub-head {
+    /* padding-top: 60px; */
+    margin: 10px 0 0 130px;
+    font-size: 40px;
+    
+}
+
+
+/* page description */
+.page-description {
+    /* padding: 50px 20px 0 20px; */
+    /* margin: 0 600px 0 70px; */
+   
+}
+
+/* directions title */
+.directions {
+    /* margin: 20px 0 20px 0; */
+    /* margin: 10px 0 0 130px; */
+    /* margin: 20px 550px 0 130px; */
+    padding-top: 20px;
+    
+    /* font-size: 40px; */
+    /* text-align: center; */
+}
+
+.tile {
+    margin: 60px 130px 0 130px;
+    opacity: 95%;
+    /* font-size: 20px; */
+    /* text-align: center;  */
+}
+
 
 
