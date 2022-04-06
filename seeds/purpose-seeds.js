@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-const { Purpose } = require('../../models');
-=======
 const { purpose } = require('../models');
->>>>>>> e0bdab4a2f30eb217be319ad88bcc45ee3b2b90d
 
 const purposeData = [
 

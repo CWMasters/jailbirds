@@ -9,8 +9,4 @@ router.use('/organs', organsRoutes);
 router.use('/purpose', purposeRoutes);
 router.use('/users', usersRoutes);
 
-<<<<<<< HEAD
 module.exports = router;
-=======
-module.exports = router;
->>>>>>> origin

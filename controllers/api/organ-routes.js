@@ -13,7 +13,7 @@ organs.findAll (
         },
       {
       model: organs,
-      attributes : [ 'id', 'organ_name']
+      attributes : [ 'id', 'organs_name']
   },
   {
     model: purpose,
@@ -41,7 +41,7 @@ router.get('/:id', (req, res) => {
         },
       {
       model: organs,
-      attributes : [ 'id', 'organ_name']
+      attributes : [ 'id', 'organs_name']
   },
   {
     model: purpose,
