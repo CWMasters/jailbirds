@@ -11,7 +11,7 @@ if (process.env.JAWSDB_URL) {
    sequelize = new Sequelize('spareparts_db', 'root', 'masters2121', {
   host: 'localhost',
   dialect: 'mysql',
-  port: 3301
+  port: 3306
 });
 }
 
