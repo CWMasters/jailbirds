@@ -24,7 +24,11 @@ organs.init(
         type: DataTypes.INTEGER,
         references: {
            models: 'users',
+<<<<<<< HEAD
            key: 'id'
+=======
+           key: 'Donor_id'
+>>>>>>> origin
         }
 
        } 
@@ -45,4 +49,5 @@ organs.init(
               
  
  module.exports = organs;
+ 
  

@@ -24,7 +24,11 @@ class biofluids extends Model {}
           type: DataTypes.INTEGER,
           references: {
              models: 'users',
+<<<<<<< HEAD
              key: 'id'
+=======
+             key: 'Donor_id'
+>>>>>>> origin
           }
 
          } 
@@ -43,4 +47,5 @@ class biofluids extends Model {}
 );  
  
  module.exports = biofluids;
+ 
  
