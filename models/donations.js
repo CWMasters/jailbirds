@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create the model/schema
-class organs extends Model {}
+class donations extends Model {}
       
-organs.init(
+donations.init(
     {
 
        id: {
@@ -15,16 +15,26 @@ organs.init(
        },
 
 
-       organs_name: {
+       organs_donated: {
        type: DataTypes.STRING,
        allowNull: false,
        },
+
+       biofluids_donated: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        },
+
+        reason_donated: {
+           type: DataTypes.STRING,
+           allowNull: false,
+        },
        
        users_id: {
         type: DataTypes.INTEGER,
         references: {
            models: 'users',
-           key: 'Donor_id'
+           key: 'id'
         }
 
        } 
@@ -34,7 +44,7 @@ organs.init(
        timestamps: false,
        freezeTableName: true,
        underscored: true,
-       modelName: 'organs',
+       modelName: 'donations',
  }
 
   
@@ -44,6 +54,4 @@ organs.init(
   
               
  
- module.exports = organs;
- 
- 
+ module.exports = donations;

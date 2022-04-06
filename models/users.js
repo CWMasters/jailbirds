@@ -13,22 +13,22 @@ const sequelize = require('../config/connection');
   users.init(
      {
 
-         Donor_id: {
+         id: {
              type: DataTypes.INTEGER,
              allowNull: false,
              primaryKey: true,
              autoIncrement: true
          },
-         organ_name: {
+         organs_donated: {
              type: DataTypes.STRING,
              allowNull: false
          },
 
-         biofluids_name: {
+         biofluids_donated: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        purpose_name: {
+        reason: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -74,4 +74,5 @@ const sequelize = require('../config/connection');
  );  
 
 module.exports = users;
+
 
