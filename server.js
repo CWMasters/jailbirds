@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-// const session = require('express-session');
+const session = require('express-session');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
 
@@ -36,3 +36,7 @@ app.use(require('./controllers/'));
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+// app.listen(3001, () => {
+//   console.log('API server now on port 3001!')
+// });
