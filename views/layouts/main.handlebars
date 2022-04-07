@@ -10,19 +10,32 @@
 </head>
 
 <body>
-    
-
     <main>
         {{{ body }}}
     </main>
-
-    
-
-    {{!-- <h1>Hi, {{userName}}</h1> --}}
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
 
+{{!-- </body>
+</html> --}}
+
+{{!-- <body> --}}
+  <div class="wrapper">
+    <header>
+      <h1>
+        <a class="select" href="/">Donations</a>
+      </h1>
+    </header>
+    {{!-- <div class="donations"> --}}
+      {{!-- {{{body}}} --}}
+    {{!-- </div> --}}
+    {{!-- <footer>
+      Thanks for visiting!
+    </footer> --}}
+  </div>
+
 </body>
+
 </html>
