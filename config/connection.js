@@ -16,3 +16,5 @@ if (process.env.JAWSDB_URL) {
 }
 
 module.exports = sequelize; 
+
+// need to re add code
