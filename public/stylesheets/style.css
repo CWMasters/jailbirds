@@ -55,7 +55,7 @@ html {
 }
 
 
-
+/* how can spare parts help you header */
 .sub-head {
     margin: 10px 0 0 130px;
     font-size: 40px;
@@ -66,6 +66,7 @@ html {
     padding-top: 20px;
 }
 
+/* all tiles */
 .tile {
     margin: 60px 130px 0 130px;
     opacity: 95%;
@@ -75,20 +76,27 @@ html {
 
 
 /* Here is the new stuff I added */
-.select {
+
+
+/* donations href */
+.don-link {
     font-size: 30px;
+    margin: 10px 0 0 400px;
+    color: white; 
 }
 
 
 .donation-list {
     margin: 0;
     padding: 0;
+    color: white; 
   }
 
 .organ-list {
     margin: 0;
     padding: 0;
     font-size: 30px;
+    color: white; 
   }
 
   .biofluids-list {

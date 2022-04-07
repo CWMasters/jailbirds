@@ -9,31 +9,51 @@
     <title>Spare Parts</title>
 </head>
 
-<body>
+{{!-- <body>
     <main>
         {{{ body }}}
     </main>
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
-    {{/if}}
+    {{/if}} --}}
 
 {{!-- </body>
 </html> --}}
 
 {{!-- <body> --}}
-  <div class="wrapper">
+  {{!-- <div class="wrapper">
     <header>
       <h1>
         <a class="select" href="/">Donations</a>
       </h1>
-    </header>
+    </header> --}}
+    
     {{!-- <div class="donations"> --}}
       {{!-- {{{body}}} --}}
     {{!-- </div> --}}
     {{!-- <footer>
       Thanks for visiting!
     </footer> --}}
+  {{!-- </div>
+
+</body>
+
+</html> --}}
+
+<body>
+  <div class="wrapper">
+    {{!-- <header>
+      <h1>
+        <a href="/">Donations</a>
+      </h1>
+    </header> --}}
+    <div class="donations">
+      {{{body}}}
+    </div>
+    <footer>
+      Thanks for visiting!
+    </footer>
   </div>
 
 </body>

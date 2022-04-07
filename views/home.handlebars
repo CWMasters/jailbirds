@@ -1,5 +1,5 @@
 <header>
-        <h1 class="m-title" id="glow">Spare Parts</h1>
+        <h1 class="m-title">Spare Parts</h1>
 </header>
 
     
@@ -19,6 +19,7 @@
     </div>
 {{>register}}
 
+
 </br>
 <section>
     <div class="tile is-ancestor">
@@ -31,18 +32,30 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </br>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et suscipit quo repudiandae totam, facilis aliquid. Veritatis eos maiores dicta, dolorum,</p>
+            
         </div>
         </div>
       </div>
     </div>
 </section>
 
-<ol class="donation-list">
-  {{#each donations as |donations|}}
- 
-    {{> donations-details }}
+<section>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <div class="tile is-child box has-background-black has-text-black">
 
-  {{/each}}
-</ol>
+        {{!-- <h1 class="select">Donations</h1> --}}
+        <a class="don-link" href="/">Donations</a>
+        <ol class="donation-list">
+          {{#each donations as |donations|}}
+            
+            {{> donations-details }}
+            
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
 
 {{!-- <h1>Hi, {{userName}}</h1> --}}
