@@ -1,7 +1,26 @@
-{{!-- <h1>Hi, {{userName}}</h1> --}}
 
-<body>
-    {{!-- position wherever we need logout button --}}
+
+
+<div class="container">
+	<div class="d-flex justify-content-center text-success">
+		<h3 class='bg-light mt-2 p-2 border rounded border-dark'>Donors</h3>
+	</div>
+	<div class="container">
+		<div class="row">
+			{{#each users as |user|}}
+
+
+			{{> users-info users}}
+
+			{{/each}}
+		</div>
+	</div>
+
+</div>
+
+ <!-- <body>
+
+  <!--  {{!-- position wherever we need logout button --}}
     <nav>
         {{#if loggedIn}}
         <a href="/loggedin">Logged In</a>
@@ -12,8 +31,7 @@
     </nav>
 
     <!-- Title and description/direction -->
-
-    <header>
+      <!--<header>
         <div class="page-description">
             <h1 class="directions">How can Spare Parts help you?</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero architecto vitae autem iusto sequi voluptates beatae quaerat magnam veniam nam porro dolore ducimus iste, rerum ipsam, laudantium ratione! Assumenda, aliquam?</p>
@@ -26,9 +44,8 @@
     </header>
 
     
-    
     <!-- Links to organs/fluids tables with images -->
-    <section>
+    <!--<section>
         <nav class="tile is-ancestor is-10">
           <div class="tile is-parent">
             <div class="tile is-child box has-background-info has-text-black">Organs
@@ -45,15 +62,18 @@
     </section>
 
     <!-- tables -->
-    <section>
+    <!-- <section>
         <div class="tile is-ancestor is-10">
             <div class="tile is-parent">
                 <div class="tile is-child box has-background-warning has-text-black">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laudantium hic dignissimos, numquam nisi non quasi expedita a est, neque mollitia recusandae in impedit velit repellendus pariatur omnis maiores perferendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis, illo sunt praesentium ab ex quasi facilis ut, laudantium ad autem alias voluptatum facere ipsa. Asperiores id unde odio non!</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laudantium hic dignissimos, numquam nisi non quasi expedita a est, neque mollitia recusandae in impedit velit repellendus pariatur omnis maiores perferendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis, illo sunt praesentium ab ex quasi facilis ut, laudantium ad autem alias voluptatum facere ipsa. Asperiores id unde odio non!</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
+
+
+
      
 </body>
 </html>
