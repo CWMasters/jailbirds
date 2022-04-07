@@ -44,16 +44,14 @@ html {
     margin-left: 130px;
 }
 
-/* text boxes for login/logout */
+/* text boxes for login/resiter */
 .user-text {
     height: 30px;
     width: 225px;
     font-size: 20px;
     margin-left: 130px;
     color: black;
-
 }
-
 
 /* how can spare parts help you header */
 .sub-head {
@@ -63,36 +61,32 @@ html {
 
 /* directions title */
 .directions {
-    padding-top: 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 /* all tiles */
 .tile {
-    margin: 60px 130px 0 130px;
+    margin: 0 130px 0 130px;
     opacity: 95%;
+    padding: 20px 0 50px 0;
 }
 
 
-
-
-/* Here is the new stuff I added */
-
-
-/* donations href */
-.don-link {
-    font-size: 30px;
+/* donations header */
+.donation-head {
+    font-size: 40px;
     margin: 10px 0 0 400px;
     color: white; 
 }
 
-
+/* donations table info */
 .donation-list {
-    margin: 0;
-    padding: 0;
-    color: white; 
+    margin-left: 400px;
+    padding: 20px 0 0 0;
+    padding-bottom: 40px;
   }
 
-.organ-list {
+/* .organ-list {
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -102,7 +96,7 @@ html {
   .biofluids-list {
     margin: 0;
     padding: 0;
-  }
+  } */
 
 
 
