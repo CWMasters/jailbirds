@@ -1,5 +1,5 @@
 {
-  "name": "spareparts_db",
+  "name": "sequelize",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -28,5 +28,6 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.18.0"
-  }
+  },
+  "devDependencies": {}
 }
