@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { users, donations } = require ('../../models'); 
+const { users, organs, biofluids, purpose } = require ('../../models'); 
 
 
 //Get all Donors
@@ -9,11 +9,20 @@ router.get('/', (req, res) => {
      {
         include : [
           {
-          model: donations,
-          attributes : [ 'id', 'organs_donated', 'biofluids_donated']
+          model: organs,
+          attributes : [ 'id', 'organ_name']
       },
+      {
+          model: biofluids,
+          attributes: [ 'id', 'biofluids_name']
+      },
+      {
+          model: purpose,
+          attributes : [ 'id', 'purpose_name']
+    }]
 
-   ]})
+
+    })
          .then(usersData => res.json(usersData))
          .catch(err => {
              console.log(err);
@@ -30,11 +39,18 @@ router.get('/:id', (req, res) => {
           },
           include : [
             {
-              model: donations,
-              attributes : [ 'id', 'organs_donated', 'biofluids_donated']
+            model: organs,
+            attributes : [ 'id', 'organ_name']
         },
-  
-]})
+        {
+            model: biofluids,
+            attributes: [ 'id', 'biofluids_name']
+        },
+        {
+            model: purpose,
+            attributes : [ 'id', 'purpose_name']
+      }]
+    })
 
          .then(usersData => {
          if (!usersData) {
@@ -106,8 +122,6 @@ router.get('/:id', (req, res) => {
           });
           
           module.exports = router;
-  
-     
   
      
   
