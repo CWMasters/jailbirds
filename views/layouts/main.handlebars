@@ -10,15 +10,21 @@
 </head>
 
 <body>
-    
+  <div class="wrapper">
+    {{!-- <header>
+      <h1>
+        <a href="/">Donations</a>
+      </h1>
+    </header> --}}
+    <div class="donations">
+      {{{body}}}
+    </div>
+  </div>
 
-    <main>
-        {{{ body }}}
-    </main>
-
-    {{#if loggedIn}}
+   {{!-- {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
-    {{/if}}
+    {{/if}} --}} --}}
 
 </body>
+
 </html>

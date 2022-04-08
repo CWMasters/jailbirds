@@ -16,11 +16,28 @@ const sequelize = require('../config/connection');
        },
 
 
-       purpose_name: {
+       reason: {
        type: DataTypes.STRING,
        allowNull: false,
+       },
+
+       reason_id: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: 'users',
+            key: 'id'
+        }
+    },
+
+   donations_id: {
+       type: DataTypes.INTEGER,
+       references: {
+           model: 'donations',
+           key: 'id'
        }
-   },
+   }
+},
+
    {
        sequelize,
        timestamps: false,

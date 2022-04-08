@@ -7,10 +7,11 @@
 /* background image  */
 html {
     background: url(../content/images/anatomy.png);
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    background-attachment: fixed;
+    /* height: 100%; */
 }
 
 /* main header */
@@ -43,15 +44,59 @@ html {
     margin-left: 130px;
 }
 
-/* text boxes for login/logout */
+/* text boxes for login/resiter */
 .user-text {
     height: 30px;
     width: 225px;
     font-size: 20px;
     margin-left: 130px;
     color: black;
-
 }
+
+/* how can spare parts help you header */
+.sub-head {
+    margin: 10px 0 0 130px;
+    font-size: 40px;
+}
+
+/* directions title */
+.directions {
+    padding: 20px 20px 20px 20px;
+}
+
+/* all tiles */
+.tile {
+    margin: 0 130px 0 130px;
+    opacity: 95%;
+    padding: 20px 0 50px 0;
+}
+
+
+/* donations header */
+.donation-head {
+    font-size: 40px;
+    margin: 10px 0 0 400px;
+    color: white; 
+}
+
+/* donations table info */
+.donation-list {
+    margin-left: 400px;
+    padding: 20px 0 0 0;
+    padding-bottom: 40px;
+  }
+
+/* .organ-list {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: white; 
+  }
+
+  .biofluids-list {
+    margin: 0;
+    padding: 0;
+  } */
 
 
 

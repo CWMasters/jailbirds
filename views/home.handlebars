@@ -1,6 +1,8 @@
 <header>
-        <h1 class="m-title" id="glow">Spare Parts</h1>
+        <h1 class="m-title">Spare Parts</h1>
 </header>
+
+    
 
     <div class="description">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat fugit perferendis commodi, aliquid, hic nihil doloremque iure iste</p>
@@ -16,3 +18,42 @@
         <h2 class="register">Register</h2>
     </div>
 {{>register}}
+
+
+</br>
+<section>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="tile is-child box has-background-black has-text-black">
+            <h1 class="sub-head">How can Spare Parts help you?</h1>
+        <div class="directions">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero architecto vitae autem iusto sequi voluptates beatae quaerat magnam veniam nam porro dolore ducimus iste, rerum ipsam, laudantium ratione! Assumenda, aliquam?</p>
+    </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et suscipit quo repudiandae totam, facilis aliquid. Veritatis eos maiores dicta, dolorum,</p>
+            
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <div class="tile is-child box has-background-black has-text-black">
+        <h1 class="donation-head">Donations</h1>
+        
+        <ol class="donation-list">
+          {{#each donations as |donations|}}
+            
+            {{>donations-details}}
+            
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
