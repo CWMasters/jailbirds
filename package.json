@@ -27,7 +27,8 @@
     "handlebars": "^4.7.7",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "node": "^17.7.2",
+    "seeds": "^2.3.1",
     "sequelize": "^6.18.0"
-  },
-  "devDependencies": {}
+  }
 }
