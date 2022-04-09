@@ -37,6 +37,6 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
 
-// app.listen(3001, () => {
-//   console.log('API server now on port 3001!')
-// });
+app.listen(3001, () => {
+  console.log('API server now on port 3001!')
+});
