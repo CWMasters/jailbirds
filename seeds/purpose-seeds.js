@@ -41,5 +41,3 @@ const purposeData = [
 
 const seedPurpose = () => purpose.bulkCreate(purposeData);
 module.exports = seedPurpose;
-
-

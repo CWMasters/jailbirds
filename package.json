@@ -1,5 +1,5 @@
 {
-  "name": "sequelize",
+  "name": "spareparts_db",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -24,11 +24,8 @@
     "express": "^4.17.3",
     "express-handlebars": "^6.0.3",
     "express-session": "^1.17.2",
-    "handlebars": "^4.7.7",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "node": "^17.7.2",
-    "seeds": "^2.3.1",
     "sequelize": "^6.18.0"
   }
 }

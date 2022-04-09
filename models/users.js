@@ -65,7 +65,7 @@ const sequelize = require('../config/connection');
              }
          },
          sequelize,
-         timestamps: true,
+         timestamps: false,
          freezeTableName: true,
          underscored: true,
          modelName: 'users'
@@ -74,5 +74,3 @@ const sequelize = require('../config/connection');
  );  
 
 module.exports = users;
-
-

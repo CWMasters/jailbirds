@@ -1,3 +1,5 @@
+
+
 const router = require('express').Router();
 const { users, donations } = require('../../models');
 
@@ -42,4 +44,3 @@ router.get('/', (req, res) => {
   });
 
 module.exports = router;
-

@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize  = require('../config/connection');
+const sequelize = require('../config/connection');
 
 // create the model/schema
 class donations extends Model {}
@@ -41,7 +41,7 @@ donations.init(
     },
    {
        sequelize,
-       timestamps: true,
+       timestamps: false,
        freezeTableName: true,
        underscored: true,
        modelName: 'donations',
