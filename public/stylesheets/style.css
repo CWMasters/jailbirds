@@ -91,51 +91,58 @@ html {
     margin-left: 170px;
 }
 
-/* text boxes for login/logout */
+/* text boxes for login/resiter */
 .user-text {
     height: 30px;
     font-size: 20px;
-    margin-left: 170px;
-    color: rgb(42, 151, 247);
+    margin-left: 130px;
+    color: black;
 }
 
-
-
-
-
-
+/* how can spare parts help you header */
 .sub-head {
-    /* padding-top: 60px; */
     margin: 10px 0 0 130px;
     font-size: 40px;
-    
-}
-
-
-/* page description */
-.page-description {
-    /* padding: 50px 20px 0 20px; */
-    /* margin: 0 600px 0 70px; */
-   
 }
 
 /* directions title */
 .directions {
-    /* margin: 20px 0 20px 0; */
-    /* margin: 10px 0 0 130px; */
-    /* margin: 20px 550px 0 130px; */
-    padding-top: 20px;
-    
-    /* font-size: 40px; */
-    /* text-align: center; */
+    padding: 20px 20px 20px 20px;
 }
 
+/* all tiles */
 .tile {
-    margin: 60px 130px 0 130px;
+    margin: 0 130px 0 130px;
     opacity: 95%;
-    /* font-size: 20px; */
-    /* text-align: center;  */
+    padding: 20px 0 50px 0;
 }
+
+
+/* donations header */
+.donation-head {
+    font-size: 40px;
+    margin: 10px 0 0 400px;
+    color: white; 
+}
+
+/* donations table info */
+.donation-list {
+    margin-left: 400px;
+    padding: 20px 0 0 0;
+    padding-bottom: 40px;
+  }
+
+/* .organ-list {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: white; 
+  }
+
+  .biofluids-list {
+    margin: 0;
+    padding: 0;
+  } */
 
 
 

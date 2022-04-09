@@ -25,7 +25,7 @@ donations.init(
         allowNull: false,
         },
 
-        reason_donated: {
+       reason_donated: {
            type: DataTypes.STRING,
            allowNull: false,
         },
